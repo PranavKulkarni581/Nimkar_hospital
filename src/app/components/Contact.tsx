@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -11,16 +11,8 @@ export function Contact() {
   });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission (mock implementation)
-    alert('Thank you for contacting us! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-    });
+    // Allow form to submit to Formspree
+    // Form will automatically redirect after successful submission
   };
 
   const handleChange = (
@@ -154,7 +146,7 @@ export function Contact() {
               Send us a Message
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form action="https://formspree.io/f/mykozwpa" method="POST" className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-[#1F2937] mb-2">
                   Full Name *
@@ -252,16 +244,6 @@ export function Contact() {
           </div>
         </div>
       </div>
-
-      {/* Floating WhatsApp Button */}
-      <a
-        href="https://wa.me/911234567890"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-[#20BA5A] transition-all duration-200 hover:scale-110 z-40 flex items-center justify-center"
-      >
-        <MessageCircle size={28} />
-      </a>
     </section>
   );
 }

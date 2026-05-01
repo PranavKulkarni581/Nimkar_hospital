@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { GraduationCap, Award, X } from 'lucide-react';
-import DrVikram from '../../images/drvikram_nimkar.png';
-import DrShubham from '../../images/drshubham_nimkar.png';
-import DrAnuja from '../../images/Dr_anuja_nimkar.png';
+
+const DrVikram = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661198/Drvikram_nimkar_cdi8hf.png';
+const DrShubham = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661198/Drshubham_nimkar_xjdkcw.png';
+const DrAnuja = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661197/Dr_anuja_nimkar_iwhh5s.png';
 
 interface DoctorType {
   name: string;

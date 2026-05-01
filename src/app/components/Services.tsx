@@ -14,6 +14,12 @@ import {
 } from 'lucide-react';
 
 export function Services() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const services = [
     {
       icon: ClipboardList,
@@ -116,7 +122,10 @@ export function Services() {
               healthcare services. Book your appointment today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#F97316] px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 font-semibold shadow-lg">
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-white text-[#F97316] px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 font-semibold shadow-lg"
+              >
                 Book Appointment
               </button>
               <a

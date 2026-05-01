@@ -40,7 +40,12 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-3">
+            <img
+              src="https://res.cloudinary.com/dxjibpdu8/image/upload/v1777662440/Untitled_design_7_vi6xfn.png"
+              alt="Nimkar Hospital Logo"
+              className="h-20 w-20 object-contain"
+            />
             <h1 className="text-2xl font-bold text-[#F97316]">
               Nimkar Hospital
             </h1>

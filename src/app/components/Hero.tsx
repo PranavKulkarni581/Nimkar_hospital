@@ -77,7 +77,7 @@ export function Hero() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="src/images/Hospital_img.png"
+                src="https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/Hospital_img_eiaj5v.png"
                 alt="Shree Nimkar Hospital Building"
                 className="w-full h-[500px] object-cover"
               />

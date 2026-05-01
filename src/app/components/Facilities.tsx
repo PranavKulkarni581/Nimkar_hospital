@@ -20,49 +20,49 @@ export function Facilities() {
       icon: User,
       title: 'Cabin Dr. Shubham Nimkar',
       description: 'Personal consultation cabin for Dr. Shubham Nimkar, equipped with modern diagnostic tools.',
-      image: '/images/Dr_shubham_kebin.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661197/Dr_shubham_kebin_wktmxc.png',
     },
     {
       icon: Building,
       title: 'Reception',
       description: 'Modern reception area with friendly staff for patient registration and assistance.',
-      image: '/images/reception.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661197/reception_xl5frn.png',
     },
     {
       icon: Users,
       title: 'Operation Theater',
       description: 'Fully equipped operation theater for safe and efficient surgical procedures.',
-      image: '/images/operation_theator.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/operation_theator_zacg48.png',
     },
     {
       icon: Scan,
       title: 'X-Ray Machine',
       description: 'Advanced digital X-ray machine for accurate and quick diagnostic imaging.',
-      image: '/images/x_ray_machine.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661201/x_ray_machine_emr3p8.png',
     },
     {
       icon: Scan,
       title: 'Sonography Machine',
       description: 'State-of-the-art ultrasound machine for detailed internal imaging and diagnostics.',
-      image: '/images/Sonography_machine.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661198/Sonography_machine_ud6vcn.png',
     },
     {
       icon: Bed,
       title: 'General Ward',
       description: 'Comfortable general ward with multiple beds for patient care and monitoring.',
-      image: '/images/General_Ward.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661198/General_Ward_v2hqph.png',
     },
     {
       icon: Activity,
       title: 'Endoscopy Machine',
       description: 'Advanced endoscopy equipment for minimally invasive diagnostic procedures.',
-      image: '/images/Endoscopy_machine.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661199/Endoscopy_machine_zheymy.png',
     },
     {
       icon: Pill,
       title: 'Medical Store',
       description: 'In-house pharmacy providing essential medicines and healthcare products.',
-      image: '/images/Medical.png',
+      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661197/reception_xl5frn.png',
     },
   ];
 
@@ -97,7 +97,7 @@ export function Facilities() {
                   <img
                     src={facility.image}
                     alt={facility.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-cover scale-110 group-hover:scale-125 transition-transform duration-500 cursor-pointer"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   

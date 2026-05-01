@@ -1,6 +1,13 @@
 import { Heart, Award, Users, Shield } from 'lucide-react';
 
 export function About() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const features = [
     {
       icon: Heart,
@@ -32,7 +39,7 @@ export function About() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="src/images/logo.png"
+                src="https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/logo_qsobfq.png"
                 alt="Medical Team at Nimkar Hospital"
                 className="w-full h-[500px] object-cover"
               />
@@ -90,10 +97,21 @@ export function About() {
               })}
             </div>
 
-            {/* CTA Button */}
-            <button className="mt-8 bg-[#F97316] text-white px-8 py-4 rounded-lg hover:bg-[#EA580C] transition-all duration-200 font-semibold shadow-lg hover:shadow-xl">
-              Learn More About Us
-            </button>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <button
+                onClick={() => scrollToSection('facilities')}
+                className="bg-[#F97316] text-white px-8 py-4 rounded-lg hover:bg-[#EA580C] transition-all duration-200 font-semibold shadow-lg hover:shadow-xl"
+              >
+                Learn More About Us
+              </button>
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-white text-[#F97316] px-8 py-4 rounded-lg border-2 border-[#F97316] hover:bg-[#FFF7ED] transition-all duration-200 font-semibold"
+              >
+                Book Appointment
+              </button>
+            </div>
           </div>
         </div>
       </div>

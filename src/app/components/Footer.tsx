@@ -1,4 +1,4 @@
-import { Heart, MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 
 export function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -14,10 +14,16 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold text-[#F97316] mb-4 flex items-center gap-2">
-              <Heart size={24} fill="#F97316" />
-              Nimkar Hospital
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="https://res.cloudinary.com/dxjibpdu8/image/upload/v1777662440/Untitled_design_7_vi6xfn.png"
+                alt="Nimkar Hospital Logo"
+                className="h-20 w-20 object-contain"
+              />
+              <h3 className="text-xl font-bold text-[#F97316]">
+                Nimkar Hospital
+              </h3>
+            </div>
             <p className="text-[#6B7280] mb-4 leading-relaxed">
               Providing compassionate and comprehensive healthcare services for over 25
               years. Your health is our priority.

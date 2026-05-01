@@ -1,7 +1,8 @@
 import { Info, ShieldCheck, Stethoscope } from 'lucide-react';
-import EndoscopyMachine from '../../images/whatendo.png';
-import HospitalImg from '../../images/whyendo.png';
-import MedicalImg from '../../images/how_we_support.png';
+
+const EndoscopyMachine = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/whatendo_jgbgre.png';
+const HospitalImg = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/whyendo_eslm1x.png';
+const MedicalImg = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/whyendo_eslm1x.png';
 
 const awarenessPoints = [
   {
@@ -43,6 +44,12 @@ const awarenessImages = [
 ];
 
 export function Gallery() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section id="endoscopy" className="py-20 bg-gradient-to-b from-white to-[#FFF7ED]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,13 +70,6 @@ export function Gallery() {
             const Icon = point.icon;
             return (
               <div key={index} className="rounded-3xl border border-[#F9E7D6] bg-white p-8 shadow-xl">
-                {point.image && (
-                  <img
-                    src={point.image}
-                    alt={point.imageAlt}
-                    className="w-full h-48 object-cover rounded-2xl mb-6"
-                  />
-                )}
                 <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-[#FFF2E6] text-[#F97316] mb-6">
                   <Icon size={28} />
                 </div>
@@ -120,7 +120,10 @@ export function Gallery() {
               <p className="text-[#6B7280] leading-7">
                 Our specialists are here to guide you through every step, using advanced endoscopy tools and a compassionate approach to make the experience as smooth and reassuring as possible.
               </p>
-              <button className="mt-8 bg-[#F97316] text-white px-8 py-4 rounded-lg hover:bg-[#EA580C] transition-all duration-200 font-semibold shadow-lg hover:shadow-xl">
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="mt-8 bg-[#F97316] text-white px-8 py-4 rounded-lg hover:bg-[#EA580C] transition-all duration-200 font-semibold shadow-lg hover:shadow-xl"
+              >
                 Talk to an Endoscopy Specialist
               </button>
             </div>
