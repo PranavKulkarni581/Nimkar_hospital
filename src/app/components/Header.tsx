@@ -68,7 +68,7 @@ export function Header() {
           {/* Contact Button */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:+911234567890"
+              href="tel:+917057632069"
               className="flex items-center gap-2 bg-[#F97316] text-white px-6 py-3 rounded-lg hover:bg-[#EA580C] transition-colors duration-200 font-medium"
             >
               <Phone size={18} />
@@ -99,7 +99,7 @@ export function Header() {
                 </button>
               ))}
               <a
-                href="tel:+911234567890"
+                href="tel:+917057632069"
                 className="flex items-center gap-2 bg-[#F97316] text-white px-6 py-3 rounded-lg hover:bg-[#EA580C] transition-colors duration-200 font-medium justify-center"
               >
                 <Phone size={18} />

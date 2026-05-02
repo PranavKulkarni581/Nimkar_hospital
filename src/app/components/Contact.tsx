@@ -62,11 +62,13 @@ export function Contact() {
                     Shubham Nursing Home, <br />
                     Chatrapati Colony,
                     <br />
+                    Near Maher Hospital,
+                  <br/>
                     Kurdawadi Road, Barshi - 413411
                   </p>
                 </div>
               </div>
-
+       
               {/* Phone */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
@@ -77,9 +79,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-bold text-[#1F2937] mb-1">Phone</h4>
                   <p className="text-[#6B7280]">
-                    Emergency: <a href="tel:+911234567890" className="text-[#F97316] hover:underline">+91 123 456 7890</a>
-                    <br />
-                    Appointment: <a href="tel:+910987654321" className="text-[#F97316] hover:underline">+91 098 765 4321</a>
+                    Emergency & Appointment: <a href="tel:+917057632069" className="text-[#F97316] hover:underline">+91 705 763 2069</a>
                   </p>
                 </div>
               </div>
@@ -94,12 +94,8 @@ export function Contact() {
                 <div>
                   <h4 className="font-bold text-[#1F2937] mb-1">Email</h4>
                   <p className="text-[#6B7280]">
-                    <a href="mailto:info@nimkarhospital.com" className="text-[#F97316] hover:underline">
-                      info@nimkarhospital.com
-                    </a>
-                    <br />
-                    <a href="mailto:appointments@nimkarhospital.com" className="text-[#F97316] hover:underline">
-                      appointments@nimkarhospital.com
+                    <a href="mailto:Shubhamnimkar7@gmail.com" className="text-[#F97316] hover:underline">
+                      Shubhamnimkar7@gmail.com
                     </a>
                   </p>
                 </div>

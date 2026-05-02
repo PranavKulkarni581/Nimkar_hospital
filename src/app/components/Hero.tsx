@@ -18,9 +18,9 @@ export function Hero() {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#F97316]/10 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-12 md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left lg:col-span-5">
             <div className="inline-block mb-4">
               <span className="bg-[#FFF7ED] text-[#F97316] px-4 py-2 rounded-full text-sm font-semibold border border-[#FED7AA]">
                 🏥 Trusted Healthcare Since 1995
@@ -74,7 +74,7 @@ export function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
+          <div className="relative lg:col-span-7">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src="https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/Hospital_img_eiaj5v.png"

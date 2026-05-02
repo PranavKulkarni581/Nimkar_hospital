@@ -128,18 +128,15 @@ export function Footer() {
               <li className="flex gap-3 text-[#6B7280]">
                 <Phone size={20} className="text-[#F97316] flex-shrink-0" />
                 <div>
-                  <a href="tel:+911234567890" className="hover:text-[#F97316] transition-colors block">
-                    +91 123 456 7890
-                  </a>
-                  <a href="tel:+910987654321" className="hover:text-[#F97316] transition-colors block">
-                    +91 098 765 4321
+                  <a href="tel:+917057632069" className="hover:text-[#F97316] transition-colors block">
+                    +91 705 763 2069
                   </a>
                 </div>
               </li>
               <li className="flex gap-3 text-[#6B7280]">
                 <Mail size={20} className="text-[#F97316] flex-shrink-0" />
-                <a href="mailto:info@nimkarhospital.com" className="hover:text-[#F97316] transition-colors">
-                  info@nimkarhospital.com
+                <a href="mailto:Shubhamnimkar7@gmail.com" className="hover:text-[#F97316] transition-colors">
+                  Shubhamnimkar7@gmail.com
                 </a>
               </li>
             </ul>

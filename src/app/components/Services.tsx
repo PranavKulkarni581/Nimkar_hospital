@@ -129,10 +129,10 @@ export function Services() {
                 Book Appointment
               </button>
               <a
-                href="tel:+911234567890"
+                href="tel:+917057632069"
                 className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition-colors duration-200 font-semibold"
               >
-                Call Now: +91 772 202 7329
+                Call Now: +91 705 763 2069
               </a>
             </div>
           </div>
