@@ -79,7 +79,7 @@ export function Hero() {
               <img
                 src="https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/Hospital_img_eiaj5v.png"
                 alt="Shree Nimkar Hospital Building"
-                className="w-full h-[500px] object-cover"
+                className="w-full h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#F97316]/20 to-transparent"></div>
             </div>

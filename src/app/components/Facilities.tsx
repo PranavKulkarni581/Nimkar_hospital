@@ -62,7 +62,7 @@ export function Facilities() {
       icon: Pill,
       title: 'Medical Store',
       description: 'In-house pharmacy providing essential medicines and healthcare products.',
-      image: 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661197/reception_xl5frn.png',
+      image: './images/Medical.png',
     },
   ];
  

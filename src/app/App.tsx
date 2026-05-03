@@ -6,6 +6,7 @@ import { Doctor } from './components/Doctor';
 import { Services } from './components/Services';
 import { Facilities } from './components/Facilities';
 import { Gallery } from './components/Gallery';
+import { Reviews } from './components/Reviews';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { FloatingButtons } from './components/FloatingButtons';
@@ -22,6 +23,7 @@ export default function App() {
       <Services />
       <Facilities />
       <Gallery />
+      <Reviews />
       <Contact />
       <Footer />
     </div>

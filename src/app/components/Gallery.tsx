@@ -1,8 +1,8 @@
 import { Info, ShieldCheck, Stethoscope } from 'lucide-react';
+import MedicalImg from '../../images/3rd.jpeg';
 
 const EndoscopyMachine = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/whatendo_jgbgre.png';
 const HospitalImg = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/whyendo_eslm1x.png';
-const MedicalImg = 'https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/whyendo_eslm1x.png';
 
 const awarenessPoints = [
   {
@@ -38,7 +38,7 @@ const awarenessImages = [
   },
   {
     src: MedicalImg,
-    title: 'Experienced Medical Team',
+    title: 'Advanced Colonoscopy for Accurate Diagnosis',
     alt: 'Medical staff preparing for patient care',
   },
 ];
