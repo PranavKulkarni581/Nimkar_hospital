@@ -40,6 +40,7 @@ const awarenessImages = [
     src: MedicalImg,
     title: 'Advanced Colonoscopy for Accurate Diagnosis',
     alt: 'Medical staff preparing for patient care',
+    objectFit: 'object-contain' as const,
   },
 ];
 
@@ -93,7 +94,7 @@ export function Gallery() {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="h-64 w-full object-cover transition-transform duration-500 hover:scale-105"
+                className={`h-64 w-full ${(image as any).objectFit || 'object-cover'} transition-transform duration-500 hover:scale-105`}
               />
               <div className="p-5">
                 <h4 className="text-lg font-semibold text-[#1F2937]">

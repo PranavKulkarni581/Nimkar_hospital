@@ -79,7 +79,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-bold text-[#1F2937] mb-1">Phone</h4>
                   <p className="text-[#6B7280]">
-                    Emergency & Appointment: <a href="tel:+917057632069" className="text-[#F97316] hover:underline">+91 705 763 2069</a>
+                    Emergency & Appointment: <a href="tel:+917057632069" className="text-[#F97316] hover:underline"><br/>+91 705 763 2069</a>
                   </p>
                 </div>
               </div>
