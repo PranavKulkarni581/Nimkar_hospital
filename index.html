@@ -16,6 +16,26 @@
 
       <title>Nimkar Hospital Barshi | Best Endoscopy Hospital | Dr. Nimkar</title>
       <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
+      <!-- Structured data for Google: Organization + logo -->
+      <script>
+        (function(){
+          try {
+            var ld = {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Nimkar Hospital Barshi",
+              "url": (location && location.origin) ? location.origin : "https://nimkarhospital.example",
+              "logo": "https://res.cloudinary.com/dxjibpdu8/image/upload/v1777661200/logo_qsobfq.png"
+            };
+            var s = document.createElement('script');
+            s.type = 'application/ld+json';
+            s.text = JSON.stringify(ld);
+            document.head.appendChild(s);
+          } catch (e) {
+            console && console.error && console.error('LD+JSON inject error', e);
+          }
+        })();
+      </script>
     </head>
 
     <body>
